@@ -1,0 +1,25 @@
+
+//variables
+$color1:rgb(151, 6, 30);
+$color2:orange;
+$color3:cyan;
+$white:rgb(241,241,241);
+$black:black;
+
+//mixins
+@mixin centerChild{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+
+background: $color2;
+
+&:hover{
+    background:blue,
+}
+
+}
