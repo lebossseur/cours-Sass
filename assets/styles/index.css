@@ -3,4 +3,46 @@ body {
 }
 body:hover {
   background: blue;
+}
+
+nav {
+  background: pink;
+  border-radius: 10px;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+nav ul li {
+  list-style: none;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 1rem;
+  }
+}
+header h1::after {
+  content: "*";
+  position: absolute;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  color: pink;
+}
+header h1:hover::after {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }/*# sourceMappingURL=index.css.map */
